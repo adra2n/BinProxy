@@ -5,7 +5,9 @@
   "repository": "n/a",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "SEE LICENSE IN PROJECT ROOT",
@@ -31,6 +33,8 @@
     "react": "^15.1.0",
     "react-dom": "^15.0.0",
     "react-tabs": "^0.5.3",
-    "webpack": "^1.13.1"
-  }
+    "webpack": "^1.13.1",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
